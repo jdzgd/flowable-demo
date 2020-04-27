@@ -1,0 +1,19 @@
+###
+
+# curl 'http://localhost:8011/flowable/article/start' -H 'Content-type: application/json' -d '{"id":"P0001","title":"title","content":"content"}'
+POST http://localhost:8011/flowable/article/start
+Content-Type: application/json
+
+{
+    "id": "P0001",
+    "title": "title",
+    "content": "content"
+}
+
+###
+
+# curl 'http://localhost:8011/flowable/article/task?candidateGroup=editors'
+GET http://localhost:8011/flowable/article/task?candidateGroup=editors
+
+###
+
